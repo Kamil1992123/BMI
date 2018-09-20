@@ -29,7 +29,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/bmi">BMI<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/caloriecalculator">Kalkulator kalorii</a>
             </li>
         </ul>
@@ -40,9 +40,15 @@
     </div>
 </nav>
 
+<h4>Twoje BMR wynosi:</h4>
+<p th:text="${bmr}"></p>
+<p>(kcal/dzień)</p>
 
-<p th:text="${person}"></p>
-    <a href="/">Strona główna</a>
+<h4>Potrzebujesz:</h4>
+<p th:text="${bmrDayliNeed}"></p>
+<p>(kcal/dzień)</p>
+
+    <a href="/caloriecalculator">Powrót</a>
 
 
 

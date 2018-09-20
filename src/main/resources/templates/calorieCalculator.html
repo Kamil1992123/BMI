@@ -29,7 +29,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/bmi">BMI<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/caloriecalculator">Kalkulator kalorii</a>
             </li>
         </ul>
@@ -41,28 +41,47 @@
 </nav>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 bmi-form">
+            <h2 class="text-center"> Kalkulator kalorii: </h2>
+            <h4 class="text-center"> Dane: </h4>
+            <form action="/caloriecalculatorresult" method="get">
 
-<form action="/caloriecalculatorresult" method="get">
+            <p>Wybierz płeć:</p>
+                <select class="form-control input-select-std" name="sex" style="width: 150px">
+                    <option value="Kobieta">Kobieta</option>
+                    <option value="Mężczyzna">Mężczyzna</option>
+                </select>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Podaj wagę (kg) :</label>
+                    <input type="number" class="form-control input-param" id="formGroupExampleInput" placeholder="Waga" name="weight" style="width: 150px">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Podaj wzrost (cm) :</label>
+                    <input type="number" class="form-control input-param" id="formGroupExampleInput2" placeholder="Wzrost" name="height" style="width: 150px">
 
-    <p>Wybierz płeć:</p>
-    <select name="sex">
-        <option value="Kobieta">Kobieta</option>
-        <option value="Mężczyzna">Mężczyzna</option>
-    </select>
-    <br><br>
-    <label> Podaj wagę: </label>
-    <input type="number" name="weight">
-    <br><br>
-    <label> Podaj wzrost: </label>
-    <input type="number" name="height">
-    <br><br>
-    <label> Podaj wiek: </label>
-    <input type="number" name="age">
-    <br><br>
-    <button type="submit">Przelicz</button>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Podaj wiek :</label>
+                        <input type="number" class="form-control input-param" id="formGroupExampleInput3" placeholder="Wiek" name="age" style="width: 150px">
+                    </div>
+                        <p>Poziom aktywności fizycznej:</p>
+                        <select class="form-control input-select-std" name="condition">
+                            <option value="0">Brak aktywności fizycznej</option>
+                            <option value="1">Mała aktywność fizyczna (ćwiczenia 1-3 tygodniowo)</option>
+                            <option value="2">Średnia aktyność fizyczna (ćwiczenia 3-5 tygodniowo)</option>
+                            <option value="3">Duża aktywność fizyczna (ćwiczenia codziennie)</option>
+                            <option value="4">Bardzo duża aktywność fizyczna</option>
+                            <option value="5">Hardcore master race</option>
+                        </select>
+                    <br>
+                            <button type="submit" class="btn btn-primary">Przelicz</button>
 
-</form>
-
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>

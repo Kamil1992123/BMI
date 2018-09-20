@@ -6,12 +6,14 @@ public class CalorieCalculator {
     private double height;
     private double age;
     private String sex;
+    private String condition;
 
-    public CalorieCalculator(String sex,double weight, double height, double age ) {
+    public CalorieCalculator(String sex,double weight, double height, double age,String condition ) {
         this.weight = weight;
         this.height = height;
         this.age = age;
         this.sex = sex;
+        this.condition = condition;
     }
 
     public double woman(double weight, double height, double age){
@@ -26,6 +28,15 @@ public class CalorieCalculator {
         return result;
     }
 
+
+
+    public String getCondition() {
+        return condition;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
 
     public double getWeight() {
         return weight;

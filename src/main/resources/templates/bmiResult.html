@@ -29,7 +29,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/bmi">BMI<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/caloriecalculator">Kalkulator kalorii</a>
             </li>
         </ul>
@@ -40,12 +40,16 @@
     </div>
 </nav>
 
+<h3 align="center">Twój wynik to:</h3>
+<br>
+<p th:text="${bmi}" align="center" style="font-size: 25px" ></p>
+<br>
+<div class="text-center">
+<a href="/bmi">Powrót</a>
+</div>
 
-
-<p th:text="${bmi}"></p>
-    <a href="/">Strona główna</a>
-<br><br>
-<p align="center">Zakresy wartości BMI:<br>
+<br><br><br>
+<p align="center" style="font-size: 20px">Zakresy wartości BMI:<br><br>
 
     mniej niż 16 - wygłodzenie<br>
     16 - 16.99 - wychudzenie<br>
@@ -55,6 +59,7 @@
     30 - 34.99 - I stopień otyłości<br>
     35 - 39.99 - II stopień otyłości<br>
     powyżej 40 - otyłość skrajna</p>
+
 
 
 

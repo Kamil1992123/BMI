@@ -27,7 +27,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/bmi">BMI<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/caloriecalculator">Kalkulator kalorii</a>
             </li>
         </ul>
@@ -40,24 +40,20 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 bmi-form">
-            <h1 class="text-center"> Kalkulator BMI: </h1>
+            <h2 class="text-center"> Kalkulator BMI: </h2>
             <h4 class="text-center"> Dane: </h4>
             <form action="/result" method="get">
                 <div class="form-group">
                     <label for="formGroupExampleInput">Podaj wagę (kg) :</label>
-                    <input type="number" class="form-control input-param" id="formGroupExampleInput" placeholder="Waga" name="weight">
+                    <input type="number" class="form-control input-param" id="formGroupExampleInput" placeholder="Waga" name="weight" style="width: 150px">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Podaj wzrost (cm) :</label>
-                    <input type="number" class="form-control input-param" id="formGroupExampleInput2" placeholder="Wzrost" name="height">
-                    <br>
-
-                    <button type="submit">Przelicz</button>
-
-                    <br>
-
+                    <input type="number" class="form-control input-param" id="formGroupExampleInput2" placeholder="Wzrost" name="height" style="width: 150px">
 
                 </div>
+                <button type="submit" class="btn btn-primary">Przelicz</button>
+
             </form>
         </div>
     </div>
@@ -66,17 +62,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <h2>Kalkulator BMI</h2>
-            <p>Kalkulator BMI (Body Mass Index) daje każdemu możliwość szybkiego i wygodego obliczenia własnego wskaźnika masy ciała. BMI obliczamy dzieląc masę ciała (w kilogramach) przez wzrost do kwadratu (w metrach). Wskaźnik ten wykorzystywany jest przede wszystkim do oceny ryzyka pojawienia się groźnych chorób: miażdżycy, choroby niedokrwiennej serca, udaru mózgu, czy nawet nowotworów. Większość tych chorób jest związana z otyłością i dlatego kalkulator BMI to tak przydatne narzędzie. </p>
+            <h3>Kalkulator BMI</h3>
+            <p style="font-size: 11px">Kalkulator BMI (Body Mass Index) daje każdemu możliwość szybkiego i wygodego obliczenia własnego wskaźnika masy ciała. BMI obliczamy dzieląc masę ciała (w kilogramach) przez wzrost do kwadratu (w metrach). Wskaźnik ten wykorzystywany jest przede wszystkim do oceny ryzyka pojawienia się groźnych chorób: miażdżycy, choroby niedokrwiennej serca, udaru mózgu, czy nawet nowotworów. Większość tych chorób jest związana z otyłością i dlatego kalkulator BMI to tak przydatne narzędzie. </p>
         </div>
         <div class="col-md-4">
-            <h2>Bmi</h2>
-            <p>BMI jest jednym z ważnych wskaźniów określających nasz stan fizyczny, ale niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony arbitralnie przez WHO próg nadwagi (25) jest zbyt niski. </p>
-            <p><a class="btn btn-secondary" href="https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a" role="button">Wiki &raquo;</a></p>
+            <h3>Bmi</h3>
+            <p style="font-size: 11px">BMI jest jednym z ważnych wskaźniów określających nasz stan fizyczny, ale niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony arbitralnie przez WHO próg nadwagi (25) jest zbyt niski. </p>
+            <p><a class="btn btn-primary" href="https://pl.wikipedia.org/wiki/Wska%C5%BAnik_masy_cia%C5%82a" role="button">Czytaj... &raquo;</a></p>
         </div>
         <div class="col-md-4">
-            <h2>Pamiętaj</h2>
-            <p>Kalkulator BMI obrazuje przybliżoną zawartość tłuszczu w organiźmie. W przypadku niektórych osób wskaźnik BMI może sugerować błędne wnioski. Osoby aktywne fizycznie, uprawiający sport, mogą posiadać zawyżoną wagę związaną z tkanką mięśniową a nie z ilością tłuszczu w organiźmie. Ponadto nie zaleca się stosowania wskaźnika BMI do oznaczania wagi ciała dla dzieci do ok. 14 roku życia oraz dla kobiet w ciąży.</p>
+            <h3>Pamiętaj</h3>
+            <p style="font-size: 11px">Kalkulator BMI obrazuje przybliżoną zawartość tłuszczu w organiźmie. W przypadku niektórych osób wskaźnik BMI może sugerować błędne wnioski. Osoby aktywne fizycznie, uprawiający sport, mogą posiadać zawyżoną wagę związaną z tkanką mięśniową a nie z ilością tłuszczu w organiźmie. Ponadto nie zaleca się stosowania wskaźnika BMI do oznaczania wagi ciała dla dzieci do ok. 14 roku życia oraz dla kobiet w ciąży.</p>
         </div>
     </div>
 
